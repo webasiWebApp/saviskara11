@@ -35,14 +35,13 @@ export default function VideoExperience() {
   const handleTimeUpdate = () => {
     if (mainVideoRef.current) {
       const { currentTime, duration } = mainVideoRef.current
-      const newProgress = (currentTime / duration) * 100
+      const safeDuration = duration && isFinite(duration) && duration > 0 ? duration : 1
+      const newProgress = (currentTime / safeDuration) * 100
       setProgress(newProgress)
     }
   }
 
   return (
-    <div className="fixed inset-0 w-screen h-screen bg-black overflow-hidden">
-      {/* LOADER STAGE */}
       {stage === "loader" && (
         <div className="w-full h-full flex items-center justify-center">
           <video ref={loaderVideoRef} autoPlay loop muted playsInline className="w-full h-full object-cover">
