@@ -45,7 +45,7 @@ export default function VideoExperience() {
       {stage === "loader" && (
         <div className="w-full h-full flex items-center justify-center">
           <video ref={loaderVideoRef} autoPlay loop muted playsInline className="w-full h-full object-cover">
-            <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/loader-OPNtmzrRXijuDAhoV3lqopLpb73j4V.mp4" type="video/mp4" />
+            <source src="https://4g4t40c68htoc9be.public.blob.vercel-storage.com/loader.webm" type="video/webm" />
           </video>
         </div>
       )}
@@ -65,7 +65,7 @@ export default function VideoExperience() {
             playsInline
             className="absolute inset-0 w-full h-full object-cover"
           >
-            <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/loader-OPNtmzrRXijuDAhoV3lqopLpb73j4V.mp4" type="video/mp4" />
+            <source src="https://4g4t40c68htoc9be.public.blob.vercel-storage.com/loader.webm" type="video/webm" />
           </video>
 
           <button
@@ -95,7 +95,7 @@ export default function VideoExperience() {
             onTimeUpdate={handleTimeUpdate}
             className="w-full h-full object-cover"
           >
-            <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/generated_video%20%281%29-A52uvs4UM4PjDwCrZ7MGxGm6kl69K5.mp4" type="video/mp4" />
+            <source src="https://4g4t40c68htoc9be.public.blob.vercel-storage.com/saviskaraWeb.webm" type="video/webm" />
           </video>
 
           <div className="absolute bottom-0 left-0 right-0 z-10 flex flex-col items-center gap-2 pb-8">
@@ -113,7 +113,7 @@ export default function VideoExperience() {
           <div className="absolute inset-0 bg-black/40 backdrop-blur-lg"></div>
 
           <video autoPlay muted playsInline className="absolute inset-0 w-full h-full object-cover -z-10">
-            <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/generated_video%20%281%29-A52uvs4UM4PjDwCrZ7MGxGm6kl69K5.mp4" type="video/mp4" />
+            <source src="https://4g4t40c68htoc9be.public.blob.vercel-storage.com/saviskaraWeb.webm" type="video/webm" />
           </video>
 
           <div className="relative z-10 text-center text-white space-y-6 animate-fade-in flex flex-col items-center">
