@@ -137,3 +137,77 @@
 .animate-fade-in {
   animation: fadeIn 0.8s ease-in;
 }
+
+
+/* From Uiverse.io by Cevorob */ 
+button {
+ position: relative;
+ height: 50px;
+ padding: 0 30px;
+ border: 2px solid #e19507;
+ background: transparent;
+ user-select: none;
+ white-space: nowrap;
+ transition: all .05s linear;
+ font-family: inherit;
+ color:#e19507 ;
+
+ margin-bottom: 100px;
+}
+
+button:before, button:after {
+ content: "";
+ position: absolute;
+ background: #000000;
+ transition: all .2s linear;
+}
+
+button:before {
+ width: calc(100% + 6px);
+ height: calc(100% - 16px);
+ top: 8px;
+ left: -3px;
+}
+
+button:after {
+ width: calc(100% - 16px);
+ height: calc(100% + 6px);
+ top: -3px;
+ left: 8px;
+}
+
+button:hover {
+ cursor: crosshair;
+}
+
+button:active {
+ transform: scale(0.95);
+}
+
+button:hover:before {
+ height: calc(100% - 32px);
+ top: 16px;
+}
+
+button:hover:after {
+ width: calc(100% - 32px);
+ left: 16px;
+}
+
+button span {
+ font-size: 15px;
+ z-index: 3;
+ position: relative;
+ font-weight: 600;
+}
+
+/* Date display using Orbitron font */
+#date {
+  font-family: 'Orbitron', 'Boldonse', 'Raleway', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  font-weight: 300;
+  font-size: 16px;
+  color: #FFD54F; /* amber/light yellow */
+  text-align: left;
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+}

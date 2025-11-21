@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
+import DecryptedText from './DecryptedText';
 
 export default function VideoExperience() {
   const [stage, setStage] = useState<"loader" | "enter-button" | "main-video" | "overlay">("loader")
@@ -110,7 +111,7 @@ export default function VideoExperience() {
             <source src="https://4g4t40c68htoc9be.public.blob.vercel-storage.com/saviskaraWeb.webm" type="video/webm" />
           </video>
 
-          <div className="relative z-10 text-center text-white space-y-6 flex flex-col items-center">
+          <div className="relative z-10 text-center text-white space-y-6 flex flex-col items- justify-center">
             <img src="/images/file.png" alt="logo"  className="h-[150px]"/>
             <div className="space-y-4">
             
@@ -131,8 +132,26 @@ export default function VideoExperience() {
                   
               </p>
 
-              <p id="date">date : 2025/11/23<br/>Time : 6.00 PM<br/>Venue : Bandaranayake Hall</p>
+              {/* <p id="date">date : 2025/11/23<br/>Time : 6.00 PM<br/>Venue : Bandaranayake Hall</p> */}
 
+              <div className="flex flex-col justify-center items-center">
+                 <DecryptedText
+                text="DATE : 2025/11/23"
+                animateOn="view"
+                revealDirection="start"
+              /> 
+              <DecryptedText
+                text="TIME : 6.00 PM"
+                animateOn="view"
+                revealDirection="start"
+              />
+              <DecryptedText
+                text="VENUE : Bandaranayake Hall"
+                animateOn="view"
+                revealDirection="start"
+              />
+              </div>
+             
 
 
             </div>
